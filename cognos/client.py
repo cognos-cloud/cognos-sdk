@@ -15,7 +15,7 @@ import httpx
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
-API_BASE    = os.getenv("COGNOS_API_URL", "https://api.cognos.ai/v1")
+API_BASE    = os.getenv("COGNOS_API_URL", "https://api.cognoscloud.xyz/v1")
 CREDENTIALS = Path.home() / ".cognos" / "credentials"
 
 console = Console()
@@ -84,8 +84,8 @@ class CognosClient:
         console.print()
         console.print("  [bold green]● Agent deployed successfully[/bold green]")
         console.print()
-        console.print(f"  Dashboard  [cyan]https://cloud.cognos.ai/agents/{name}[/cyan]")
-        console.print(f"  API        [cyan]POST https://api.cognos.ai/v1/agents/{name}/run[/cyan]")
+        console.print(f"  Dashboard  [cyan]https://cognoscloud.xyz/agents/{name}[/cyan]")
+        console.print(f"  API        [cyan]POST https://api.cognoscloud.xyz/v1/agents/{name}/run[/cyan]")
         console.print("  Status     [green]Running[/green]")
         console.print()
 

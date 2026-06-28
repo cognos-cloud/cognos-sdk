@@ -29,9 +29,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage   = "https://cloud.cognos.ai"
+Homepage   = "https://cognoscloud.xyz"
 Repository = "https://github.com/cognos-cloud/cognos-cloud"
-Docs       = "https://cloud.cognos.ai/docs"
+Docs       = "https://cognoscloud.xyz/docs"
 
 [project.scripts]
 cognos = "cognos_cli.main:app"
